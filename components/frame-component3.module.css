@@ -1,0 +1,143 @@
+.tm {
+  position: relative;
+  font-weight: 800;
+  display: inline-block;
+  min-width: 9px;
+  z-index: 8;
+  background-image: url();
+}
+.tmWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) 0 0;
+}
+.aboutUs,
+.features,
+.home,
+.pricing {
+  text-decoration: none;
+  position: relative;
+  line-height: 26px;
+  text-transform: capitalize;
+  display: inline-block;
+  z-index: 8;
+}
+.home {
+  font-weight: 700;
+  color: var(--color-tomato);
+  min-width: 61px;
+}
+.aboutUs,
+.features,
+.pricing {
+  font-weight: 500;
+  color: inherit;
+}
+.aboutUs {
+  flex: 1;
+  min-width: 91px;
+  white-space: nowrap;
+}
+.features,
+.pricing {
+  min-width: 69px;
+}
+.features {
+  flex: 1;
+  min-width: 89px;
+}
+.homeParent {
+  margin: 0;
+  flex: 1;
+  flex-direction: row;
+  gap: var(--gap-3xl-7);
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-poppins);
+}
+.frameGroup,
+.frameWrapper,
+.homeParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+.frameGroup {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-21xl);
+}
+.frameWrapper {
+  width: 427px;
+  flex-direction: column;
+  padding: var(--padding-mid) 0 0;
+  box-sizing: border-box;
+}
+.frameChild {
+  height: 60px;
+  width: 180px;
+  position: relative;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-black);
+  display: none;
+}
+.download {
+  text-decoration: none;
+  position: relative;
+  line-height: 28px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: inherit;
+  display: inline-block;
+  min-width: 92px;
+  z-index: 1;
+}
+.appLandingPageInner,
+.frameParent,
+.rectangleParent {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.rectangleParent {
+  border-radius: var(--br-9xs);
+  background-color: var(--color-black);
+  justify-content: flex-start;
+  padding: var(--padding-base) var(--padding-23xl) var(--padding-base)
+    var(--padding-27xl);
+  z-index: 8;
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+.appLandingPageInner,
+.frameParent {
+  max-width: 100%;
+}
+.frameParent {
+  width: 982px;
+  justify-content: space-between;
+  gap: var(--gap-xl);
+}
+.appLandingPageInner {
+  width: 1198px;
+  justify-content: center;
+  text-align: left;
+  font-size: var(--font-size-8xs-2);
+  color: var(--color-black);
+  font-family: var(--font-plus-jakarta-sans);
+}
+@media screen and (max-width: 750px) {
+  .homeParent {
+    display: none;
+  }
+}
+@media screen and (max-width: 450px) {
+  .frameGroup {
+    gap: var(--gap-xl);
+  }
+}
